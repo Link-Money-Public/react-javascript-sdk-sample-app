@@ -8,16 +8,28 @@ Please ensure that you have interfaced with someone at Link Money in order to wh
 
 ## Installation
 
-Please ensure that the correct credentials for the merchant backend, the URL and path to the merchant backend services and the Link merchant ID correspond to the appropriate environment. The available Link Money environments are `sandbox` and `production`. This repo will be defaulted to `sandbox`. You will need to fill in the correct values to the `config` object.
+In order to have a working example application you will have to refer to the `.env.example` for which environment variables are required.
+
+Once you have all the necessary values, you can create a standard `.env` file with your production values.
+
+Within the `index.js` you can enter your test customer data when generating a session.
+
+You can also adjust the `/api/make-payment` body to your needs.
+
+Your sample app should look like this:
+
+<hr />
+
+and once you click the "Pay by Bank" button you should be shot over to our Link Money Client, which looks like this:
 
 ## Linking and Payment
 
 The linking and payment process can be broken into four steps.
 
-1.  Merchant backend generates an access token.
-2.  Merchant backend generates a session key.
+1.  `/api/get-access-token` endpoint generates an access token.
+2.  Clicking the `Pay by Bank` button will then generate the session key via the `/api/get-session-token` endpoint.
 3.  User’s account is linked using the Link Money Pay by Bank SDK with a customer ID being generated.
-4.  Merchant backend makes a payment request using the appropriate tokens plus the customer ID.
+4.  You can now make a payment request using the appropriate tokens plus the customer ID.
 
 For further information please refer to [our documentation](https://developer.link.money/).
 
@@ -26,9 +38,7 @@ For further information please refer to [our documentation](https://developer.li
 Once you have successfully created a customer within our system and retrieved a customer id, you can then easliy retrieve that customer's information and accounts using the SDK.
 
 1.  Save customer ID upon returning from linking flow.
-2.  Generate an access token if you haven't already.
-3.  Enter both values into either the `getCustomer` or `getAccounts` functions provided by the SDK.
-
-> Note: Both of these functions return a promise, so you will have to await their calls.
+2.  Enter the customer ID into either the `getCustomer` or `getAccounts` functions provided by the SDK.
+3.  Click the associated button.
 
 For further information please refer to [our documentation](https://developer.link.money/products/sdks#get-customer-by-id).
