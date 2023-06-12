@@ -6,6 +6,8 @@ This is a public code sample demonstrating how to integrate the Link Money Pay b
 
 Please ensure that you have interfaced with someone at Link Money in order to whitelist your redirect url. Also ensure that you have a valid client ID and secret from your merchant backend plus a valid merchant ID provided by Link Money. In order to acquire a valid Link Money merchant ID, [please reach out to us](https://www.link.money/contact).
 
+> Note: While this repository is using [Next.js](https://nextjs.org/), our SDK is entirely framework agnostic. All of the same concepts here will translate to any react application.
+
 ## Installation
 
 In order to have a working example application you will have to refer to the `.env.example` for which environment variables are required.
