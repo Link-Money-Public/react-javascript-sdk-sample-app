@@ -1,6 +1,6 @@
 # React Javascript SDK Sample App
 
-This is a public code sample demonstrating how to integrate the Link Money Pay by Bank Web SDK into your own react application
+This is a public code sample demonstrating how to integrate the Link Money Pay by Bank Web SDK into your own React application
 
 ## Requirements
 
@@ -15,6 +15,12 @@ Once you have all the necessary values, you can create a standard `.env` file wi
 Within the `index.js` you can enter your test customer data when generating a session.
 
 You can also adjust the `/api/make-payment` body to your needs.
+
+Start the application by installing all packages and running in dev mode:
+
+```shell
+yarn && yarn dev
+```
 
 Your sample app should look like this:
 
