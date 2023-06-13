@@ -6,6 +6,8 @@ This is a public code sample demonstrating how to integrate the Link Money Pay b
 
 Please ensure that you have interfaced with someone at Link Money in order to whitelist your redirect url. Also ensure that you have a valid client ID and secret from your merchant backend plus a valid merchant ID provided by Link Money. In order to acquire a valid Link Money merchant ID, [please reach out to us](https://www.link.money/contact).
 
+> Note: While this repository is using [Next.js](https://nextjs.org/), our SDK is entirely framework agnostic. All of the same concepts here will translate to any react application.
+
 ## Installation
 
 In order to have a working example application you will have to refer to the `.env.example` for which environment variables are required.
@@ -24,9 +26,13 @@ yarn && yarn dev
 
 Your sample app should look like this:
 
+<img width="386" alt="244476062-f4725708-b4b0-4148-b9c0-f076de76f8c4" src="https://github.com/Link-Money-Public/react-javascript-sdk-sample-app/assets/20342632/de7974c0-62d9-4c1f-84a6-7dba9fb6947c">
+
 <hr />
 
 and once you click the "Pay by Bank" button you should be shot over to our Link Money Client, which looks like this:
+
+<img width="573" alt="244476204-dae01463-e889-43b4-b716-fe36ecce7251" src="https://github.com/Link-Money-Public/react-javascript-sdk-sample-app/assets/20342632/b7780693-1720-40ae-b3fa-0f9c962cef83">
 
 ## Linking and Payment
 
