@@ -26,13 +26,13 @@ yarn && yarn dev
 
 Your sample app should look like this:
 
-<img width="386" alt="244476062-f4725708-b4b0-4148-b9c0-f076de76f8c4" src="https://github.com/Link-Money-Public/react-javascript-sdk-sample-app/assets/20342632/de7974c0-62d9-4c1f-84a6-7dba9fb6947c">
+![image of application](https://github.com/Link-Money-Public/react-javascript-sdk-sample-app/blob/main/gh/sample.png?raw=true?sanitize=true)
 
 <hr />
 
 and once you click the "Pay by Bank" button you should be shot over to our Link Money Client, which looks like this:
 
-<img width="573" alt="244476204-dae01463-e889-43b4-b716-fe36ecce7251" src="https://github.com/Link-Money-Public/react-javascript-sdk-sample-app/assets/20342632/b7780693-1720-40ae-b3fa-0f9c962cef83">
+![image of application](https://github.com/Link-Money-Public/react-javascript-sdk-sample-app/blob/main/gh/client.png?raw=true?sanitize=true)
 
 ## Linking and Payment
 
